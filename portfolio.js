@@ -55,38 +55,32 @@ document.addEventListener('DOMContentLoaded', () => {
      * Mobile Navigation Toggle
      */
     const mobileNavToggle = document.getElementById('mobile-nav-toggle');
-    const mobileNavClose = document.getElementById('mobile-nav-close');
     const mainNav = document.getElementById('main-nav');
-    const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
     const navLinks = mainNav.querySelectorAll('a');
 
-    function openMobileNav() {
-        mainNav.classList.add('active');
-        mobileNavOverlay.classList.add('active');
-    }
-
-    function closeMobileNav() {
-        mainNav.classList.remove('active');
-        mobileNavOverlay.classList.remove('active');
+    function toggleMobileNav() {
+        mainNav.classList.toggle('active');
+        
+        if(mainNav.classList.contains('active')){
+            mobileNavToggle.classList.remove('fa-bars');
+            mobileNavToggle.classList.add('fa-times');
+        } else {
+            mobileNavToggle.classList.remove('fa-times');
+            mobileNavToggle.classList.add('fa-bars');
+        }
     }
 
     if(mobileNavToggle) {
-        mobileNavToggle.addEventListener('click', openMobileNav);
-    }
-    
-    if(mobileNavClose) {
-        mobileNavClose.addEventListener('click', closeMobileNav);
-    }
-    
-    if(mobileNavOverlay) {
-        mobileNavOverlay.addEventListener('click', closeMobileNav);
+        mobileNavToggle.addEventListener('click', toggleMobileNav);
     }
 
     // Close mobile nav when clicking a link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
-                closeMobileNav();
+                if(mainNav.classList.contains('active')){
+                    toggleMobileNav();
+                }
             }
         });
     });
