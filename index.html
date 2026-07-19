@@ -18,15 +18,18 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
 
     <!-- Corporate Header -->
     <header class="site-header">
         <div class="container header-container">
             <a href="#" class="brand-logo">
-                <span class="logo-text"></span>
+                <span class="logo-text">Vashu.</span>
             </a>
             
-            <nav class="main-nav">
+            <nav class="main-nav" id="main-nav">
+                <i class="fas fa-times mobile-nav-close" id="mobile-nav-close"></i>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#expertise">Skills</a></li>
@@ -35,7 +38,10 @@
                 </ul>
             </nav>
             
-            <a href="mailto:Pvashu451@email.com" class="btn-primary-outline nav-btn">Let's Talk</a>
+            <div class="header-actions">
+                <a href="mailto:Pvashu451@email.com" class="btn-primary-outline nav-btn">Let's Talk</a>
+                <i class="fas fa-bars mobile-nav-toggle" id="mobile-nav-toggle"></i>
+            </div>
         </div>
     </header>
 
