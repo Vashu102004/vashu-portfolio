@@ -197,6 +197,35 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #CBD5E1;
 }
 
+.btn-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(135deg, var(--text-dark), #3a3a3a);
+    color: #fff;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.9rem 2.2rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+}
+
+.btn-resume:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    color: #fff;
+    background: linear-gradient(135deg, #000, #222);
+}
+
+.btn-resume i {
+    font-size: 1.1rem;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
