@@ -39,6 +39,19 @@ body {
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+html {
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 a {
@@ -722,6 +735,8 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         padding: 0;
         border-top: 1px solid #E2E8F0;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
     
     .main-nav.active { display: flex; }
@@ -780,10 +795,10 @@ h1, h2, h3, h4, h5, h6 {
     .logo-text { font-size: 1.6rem; }
     .nav-btn { padding: 0.5rem 0.8rem; font-size: 0.75rem; }
     
-    .expertise-card { padding: 1.5rem 1.25rem; }
+    .expertise-card { padding: 1.5rem 1.25rem; text-align: center; }
     .expertise-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-    .exp-icon { font-size: 2.2rem; margin-bottom: 1rem; }
-    .skill-item { font-size: 0.9rem; padding: 0.5rem 0.8rem; }
+    .exp-icon { font-size: 2.2rem; margin-bottom: 1rem; display: flex; justify-content: center; }
+    .skill-item { font-size: 0.9rem; padding: 0.5rem 0.8rem; justify-content: center; }
     
     .case-content { padding: 1.25rem 1rem; }
     .case-content h3 { font-size: 1.4rem; }
