@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vashu Patel | Frontend Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+    
+    <meta name="description" content="Portfolio of Vashu Patel, Frontend Developer (MERN). Building responsive, high-performance web applications.">
+    
+    <!-- Premium Fonts: Inter (Body) & Space Grotesk (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="portfolio.css?v=2.0">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-brand">
+                <span class="text-accent">&lt;</span>VASHU<span class="text-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+                <button class="mobile-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content fade-up">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Frontend Developer (MERN) | Frontend Intern
+                    </div>
+                    <h1 class="hero-title">VASHU PATEL</h1>
+                    <p class="hero-desc">
+                        Motivated Full Stack Developer (MERN) experienced in building and deploying responsive, high-performance web applications for real-world clients. Skilled in UI/UX optimization, ensuring pixel-perfect designs and seamless user experiences.
+                    </p>
+                    <div class="freelance-status fade-up delay-1 mb-8">
+                        <span class="badge" style="background: rgba(16, 185, 129, 0.1); color: var(--emerald); border: 1px solid rgba(16, 185, 129, 0.2); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem;">
+                            <span class="pulse-dot"></span> Available for Freelance Work
+                        </span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="Resume.pdf" download="Vashu_Patel_Resume.pdf" class="btn btn-outline">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/vasu-patel-745a37256/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Vashu102004" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-up delay-1">
+                    <div class="image-wrapper">
+                        <div class="glow-backdrop"></div>
+                        <img src="imges/profile.jpeg" alt="Vashu Patel" class="profile-image">
+                        <div class="floating-label">
+                            <i class="devicon-react-original colored"></i>
+                            <span>MERN DEVELOPER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Building scalable interfaces with clean code and thoughtful UX.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text fade-up">
+                        <p>I am a motivated Full Stack Developer currently pursuing my Integrated MCA at IPS Academy, Indore. My core focus lies in the MERN stack, where I build robust backend APIs and craft scalable, pixel-perfect frontend interfaces.</p>
+                        <p>I have hands-on experience in production environments, contributing to live e-commerce and corporate platforms. I am passionate about modernizing legacy web architectures, performance tuning, and writing clean, maintainable code that aligns with current industry best practices.</p>
+                        <p>Beyond coding, I excel at collaborating with clients to translate their complex business requirements into seamless, functional digital solutions.</p>
+                    </div>
+                    
+                    <div class="about-info-blocks fade-up delay-1">
+                        <div class="info-block">
+                            <i class="fas fa-graduation-cap info-icon"></i>
+                            <div class="info-content">
+                                <h4>Education</h4>
+                                <p>Integrated MCA — IPS Academy</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <i class="fas fa-briefcase info-icon"></i>
+                            <div class="info-content">
+                                <h4>Experience</h4>
+                                <p>Frontend Developer Intern — Soft Spectrum</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Indore, Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <i class="fas fa-code info-icon"></i>
+                            <div class="info-content">
+                                <h4>Focus</h4>
+                                <p>MERN Stack • UI/UX • Frontend</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section bg-surface" id="skills">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I use to build modern web applications.</p>
+                </div>
+                
+                <div class="skills-container fade-up delay-1">
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card"><i class="devicon-react-original colored"></i> <span>React.js</span></div>
+                            <div class="skill-card"><i class="devicon-javascript-plain colored"></i> <span>JavaScript (ES6+)</span></div>
+                            <div class="skill-card"><i class="devicon-html5-plain colored"></i> <span>HTML5</span></div>
+                            <div class="skill-card"><i class="devicon-css3-plain colored"></i> <span>CSS3</span></div>
+                            <div class="skill-card"><i class="devicon-tailwindcss-original colored"></i> <span>Tailwind CSS</span></div>
+                            <div class="skill-card"><i class="devicon-bootstrap-plain colored"></i> <span>Bootstrap</span></div>
+                            <div class="skill-card"><i class="fas fa-mobile-alt text-accent"></i> <span>Responsive Design</span></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend & Tools -->
+                    <div class="skills-split">
+                        <div class="skill-category">
+                            <h3 class="category-title">Backend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-card"><i class="devicon-nodejs-plain colored"></i> <span>Node.js</span></div>
+                                <div class="skill-card"><i class="devicon-express-original colored"></i> <span>Express.js</span></div>
+                                <div class="skill-card"><i class="fas fa-file-code text-accent"></i> <span>EJS</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="category-title">Tools & Tech</h3>
+                            <div class="skills-grid">
+                                <div class="skill-card"><i class="devicon-git-plain colored"></i> <span>Git</span></div>
+                                <div class="skill-card"><i class="devicon-github-original text-primary"></i> <span>GitHub</span></div>
+                                <div class="skill-card"><i class="devicon-vscode-plain colored"></i> <span>VS Code</span></div>
+                                <div class="skill-card"><i class="fas fa-robot text-accent"></i> <span>Prompt Engineering</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Freelance Services Section -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">What I Offer</h2>
+                    <p class="section-subtitle">Professional freelance services tailored for your business needs.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card fade-up">
+                        <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing modern, intuitive, and pixel-perfect user interfaces that provide exceptional user experiences and high conversion rates across all devices.</p>
+                    </div>
+                    
+                    <div class="service-card fade-up delay-1">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Static Websites</h3>
+                        <p>Building blazing-fast, responsive, and SEO-friendly static websites. Perfect for portfolios, corporate landing pages, and local businesses.</p>
+                    </div>
+                    
+                    <div class="service-card fade-up delay-2">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>MERN Web Apps</h3>
+                        <p>Developing scalable, full-stack dynamic web applications with React.js frontend and secure Node.js/Express backend APIs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section bg-surface" id="projects">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-subtitle">Real-world work and applications I've built.</p>
+                </div>
+                
+                <div class="projects-wrapper">
+                    
+                    <!-- Project 1 -->
+                    <article class="project-card fade-up">
+                        <div class="project-visual">
+                            <img src="images/herbobeans.jpg" alt="Herbobeans E-Commerce UI" class="project-placeholder" >
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="badge badge-accent">LIVE CLIENT PROJECT</span>
+                                <span class="status-indicator"><span class="pulse-emerald"></span> LIVE</span>
+                            </div>
+                            <h3 class="project-title">Herbobeans E-Commerce</h3>
+                            <p class="project-desc">Designed and developed a fully responsive e-commerce web application from scratch for Herbobeans, an Ayurvedic wellness brand. The platform features categorized natural products for weight gain, weight loss, and pain relief. Currently upgrading to a fully dynamic backend.</p>
+                            
+                            <div class="project-status-list">
+                                <div class="status-item"><strong>Static Version (Live):</strong> Built responsive, pixel-perfect frontend UI.</div>
+                                <div class="status-item"><strong>Dynamic Version (Ongoing):</strong> Developing RESTful APIs with Node.js & Express.</div>
+                            </div>
+                            
+                            <div class="project-tags">
+                                <span>React.js</span>
+                                <span>Tailwind CSS</span>
+                                <span>Node.js</span>
+                            </div>
+                            <a href="https://herbobeans.in/" target="_blank" class="btn btn-outline btn-sm">
+                                View Live Project <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card fade-up">
+                        <div class="project-visual">
+                            <img src="images/soft_spectrum.jpg" alt="Soft Spectrum Corporate UI" class="project-placeholder" >
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="badge badge-primary">DEPLOYED PROJECT</span>
+                                <span class="status-indicator"><span class="pulse-emerald"></span> LIVE</span>
+                            </div>
+                            <h3 class="project-title">Soft Spectrum</h3>
+                            <p class="project-desc">Developed and deployed the official corporate website for Soft Spectrum. Engineered a responsive, modern interface that highlights the company's services and portfolio while ensuring optimal web performance and user experience.</p>
+                            
+                            <div class="project-tags">
+                                <span>React.js</span>
+                                <span>Modern CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="http://softspectrum.net/" target="_blank" class="btn btn-outline btn-sm mt-auto">
+                                View Live Project <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card fade-up">
+                        <div class="project-visual">
+                            <img src="images/simon_says.jpg" alt="Simon Says Game UI" class="project-placeholder" >
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="badge badge-secondary">WEB APPLICATION</span>
+                            </div>
+                            <h3 class="project-title">Simon Says Memory Game</h3>
+                            <p class="project-desc">Developed an interactive sequencing game utilizing complex structural logic to manage state synchronization and level progression. Engineered highly fluid, hardware-accelerated CSS animations and utilized advanced JS debugging to optimize rendering timelines.</p>
+                            
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                            <a href="Simon-says-game/index.html" target="_blank" class="btn btn-outline btn-sm mt-auto">
+                                Play Game <i class="fas fa-play ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="grid-layout">
+                    <!-- Experience -->
+                    <div class="timeline-section fade-up">
+                        <h2 class="section-title text-2xl mb-8">Professional Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <span class="badge badge-accent mb-2 inline-block">CURRENT</span>
+                                        <h3>Frontend Developer Intern</h3>
+                                        <h4>Soft Spectrum — Indore</h4>
+                                    </div>
+                                    <ul class="timeline-points">
+                                        <li>Collaborating on live client projects to develop and optimize responsive e-commerce web applications.</li>
+                                        <li>Modernizing legacy corporate websites with clean, component-based architectures.</li>
+                                        <li>Improving UI/UX engagement and ensuring pixel-perfect implementations.</li>
+                                        <li>Debugging critical performance issues for cross-device compatibility.</li>
+                                        <li>Leveraging modern design patterns for highly scalable production environments.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="education-section fade-up delay-1">
+                        <h2 class="section-title text-2xl mb-8">Education</h2>
+                        <div class="edu-cards">
+                            <div class="edu-card">
+                                <div class="edu-year">CGPA: 7.0</div>
+                                <h3>Integrated Master of Computer Applications (IMCA)</h3>
+                                <p>IPS Academy, Indore — RGPV Bhopal</p>
+                            </div>
+                            <div class="edu-card">
+                                <div class="edu-year">70%</div>
+                                <h3>Higher Secondary (12th)</h3>
+                                <p>Vidhya Vihar Higher Secondary School, Manawar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section bg-surface" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Contact Info -->
+                    <div class="contact-info fade-up">
+                        <h2 class="contact-title">Let's Build Something Together.</h2>
+                        <p class="contact-desc">Looking for a freelance developer for your next project, or have a full-time opportunity? Drop me a message and I'll get back to you as soon as possible.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>pvashu451@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 7067977082</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Indore, Madhya Pradesh</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials mt-8">
+                            <a href="https://github.com/Vashu2002" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vashu-patel-b51079237/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/917067977082" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form (Web3Forms) -->
+                    <div class="contact-form-wrapper fade-up delay-1">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                            <!-- Replace this value with your access key from Web3Forms -->
+                            <input type="hidden" name="access_key" value="1146d5d4-5213-43aa-beb9-3d7754356c52">
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="How can I help you? Are you looking for a freelancer?" required></textarea>
+                            </div>
+                            
+                            <!-- Optional: Redirect to a thank you page (can be removed) -->
+                            <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+
+                            <button type="submit" class="btn btn-primary w-100">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="nav-brand">
+                    <span class="text-accent">&lt;</span>VASHU<span class="text-accent">/&gt;</span>
+                </a>
+                <p class="footer-role">Frontend Developer (MERN) | Frontend Intern</p>
+                <p class="footer-desc">Building responsive, high-performance web applications.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/vasu-patel-745a37256/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Vashu102004" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vashu Patel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="portfolio.js?v=2.0"></script>
+</body>
+</html>
